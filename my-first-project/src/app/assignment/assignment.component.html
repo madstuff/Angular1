@@ -1,0 +1,21 @@
+<label>Username (using ngModel for two way binding) :  </label>
+<input type = "text"
+       class="form-control"
+       [(ngModel)]="username">
+
+<p>Hello {{username}}!</p>
+
+<label>Logging in console </label>
+<button class="btn btn-primary" (click)="handleClick()">Click me!</button>
+
+<p>Example of @Input: {{exampleInput}}</p>
+
+<br>
+
+<p>@Output and Event Emitter: </p>
+
+<button class="btn btn-primary"
+        (click)="increment()">Increment</button>
+
+<br><br>
+<button class="btn btn-primary" (click)="onLodash()">Lodash Concat</button>
